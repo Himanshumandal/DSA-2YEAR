@@ -1,12 +1,10 @@
-// Online C++ compiler to run C++ program online
 #include <iostream>
 #include<vector>
 using namespace std;
-
 int main() {
     int n;
     cin>>n;
-    vector<int> a(n)(n);
+   vector<vector<int>>a(n,vector<int>(n));
     int m1=0,m2=0;
     for(int i=0;i<n;i++){
         for(int j=0;j<n;j++){
@@ -29,7 +27,6 @@ for(int i=0;i<n;i++){
 }
 }
 //cout<<m2;
-
 int diff;
 diff=abs(m1-m2);
 cout<<diff;
